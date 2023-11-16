@@ -1,0 +1,6 @@
+/* app/assets/stylesheets/custom.css */
+
+/* Add your custom styles here */
+.navbar-brand img {
+  max-height: 40px; /* Set the maximum height for the logo */
+}

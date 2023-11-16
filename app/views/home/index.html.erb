@@ -1,0 +1,21 @@
+
+<div class="container mt-5">
+<h1>Welcome to the Home Page!</h1>
+
+<div class="row">
+  <% @dummy_items.each do |item| %>
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <img src="<%= item[:image_url] %>" class="card-img-top" alt="<%= item[:title] %>">
+        <div class="card-body">
+          <h5 class="card-title"><%= item[:title] %></h5>
+          <p class="card-text"><%= item[:description] %></p>
+          <p class="card-text">Price: $<%= item[:price] %></p>
+          <p class="card-text">Quantity: <%= item[:quantity] %></p>
+          <%= link_to 'View/Edit Details', home_path(id: item[:id]), class: 'btn btn-primary' %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+</div>

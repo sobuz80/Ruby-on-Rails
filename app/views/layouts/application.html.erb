@@ -1,0 +1,33 @@
+<!-- app/views/layouts/application.html.erb -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>YourAppName</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  <!-- Add Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<!-- Add custom CSS -->
+  <%= stylesheet_link_tag 'custom', media: 'all' %>
+<body>
+
+  <!-- Render the header partial -->
+  <%= render 'layouts/header' %>
+
+  <div class="container mt-5">
+    <%= yield %>
+  </div>
+  <!-- Render the header partial -->
+  <%= render 'layouts/footer' %>
+
+  <!-- Add custom JS -->
+ 
+  <!-- Add Bootstrap JS and Popper.js (required for Bootstrap dropdowns) -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+ 
+</body>
+</html>

@@ -1,0 +1,30 @@
+Ruby on Rails application  controller model view  migration blog with comments
+Ruby on Rails application  controller model view  migration blog  category with comments with mysql db
+
+C:\Users\moham>ruby --version
+ruby 3.2.2 (2023-03-30 revision e51014f9c0) [x64-mingw-ucrt]
+
+C:\Users\moham>gem --version
+3.4.10
+
+gem install rails
+
+rails --version
+
+C:\Users\moham>rails --version
+Rails 7.1.2
+
+C:\Users\moham>gem install sqlite3
+
+https://guides.rubyonrails.org/getting_started.html
+
+rails new portfolio
+
+
+#####controllers#######  
+rake tmp:clear
+
+rails generate controller Home index
+rails generate controller About index
+rails generate controller Portfolio index
+
