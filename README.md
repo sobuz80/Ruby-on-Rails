@@ -22,3 +22,6 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+![all text](https://github.com/sobuz80/Ruby-on-Rails/blob/main/Screenshot%202023-11-16%20215025.png)
+
